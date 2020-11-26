@@ -3,6 +3,7 @@ package com.mvc.entity;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -16,7 +17,10 @@ public class User {
     private String name;
     private Boolean gender;
     private Date birth;
-    private String[] hobby;
+    private List<String> hobby;
+
+    public User(int i, String 张三, Date date) {
+    }
 
     @Override
     public String toString() {
@@ -25,7 +29,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", gender=" + gender +
                 ", birth=" + birth +
-                ", hobby=" + Arrays.toString(hobby) +
+                ", hobby=" + hobby +
                 '}';
     }
 
@@ -61,11 +65,11 @@ public class User {
         this.birth = birth;
     }
 
-    public String[] getHobby() {
+    public List<String> getHobby() {
         return hobby;
     }
 
-    public void setHobby(String[] hobby) {
+    public void setHobby(List<String> hobby) {
         this.hobby = hobby;
     }
 }
