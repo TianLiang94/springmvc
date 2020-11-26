@@ -1,7 +1,10 @@
 com\mvc\entity\User.class
+com\mvc\serialize\MySerializer.class
 com\mvc\web\HelloController.class
 com\mvc\web\ParamController.class
+com\mvc\entity\User2.class
 com\mvc\entity\UserList.class
 com\mvc\web\DataController.class
 com\mvc\web\JsonController.class
 com\mvc\web\ForwardController.class
+com\mvc\serialize\MySerializer2.class

@@ -19,7 +19,23 @@ public class User {
     private Date birth;
     private List<String> hobby;
 
-    public User(int i, String 张三, Date date) {
+    public User(Integer id, String name, Date birth) {
+        this.id = id;
+        this.name = name;
+        this.birth = birth;
+    }
+
+    public User(Integer id, String name, Boolean gender, Date birth, List<String> hobby) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.birth = birth;
+        this.hobby = hobby;
+    }
+
+    public User(Integer id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     @Override
